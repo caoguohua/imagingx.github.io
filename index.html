@@ -3,12 +3,255 @@
 <html lang="en">
 <head>
 	<title>ImagingX Inc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="keywords" content="ImagingX, www.imagingxinc.com, Guohua Cao" />
 	<meta name="description" content="ImagingX, www.imagingxinc.com, Guohua Cao" />
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  
+<style>
+	body {
+	background-color: black;
+  color: white;
+    margin: 0;
+	}
+
+  a {
+  color: #bd5d38;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #824027;
+  text-decoration: underline;
+}
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(203, 209, 211, 0.678);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.wrapper
+{
+ width:auto;
+ height:auto;
+ margin:0 auto;
+ left:50%;
+ top:50%;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+div.footer{
+width:auto;
+padding:0px;
+border:0px;
+margin:0px;
+padding-bottom:2em;
+font-size : 11px;
+text-align:center;
+}
+
+#people /* table style for people */
+{
+	width:100%;
+	border-collapse:collapse;
+}
+#people td
+{
+border:0px solid #98bf21;
+padding:12px 32px;
+}
+
+#people td.photo
+{
+max-width: 160px;
+width:120px;
+}
+
+#people td.contact
+{
+max-width: 300px;
+width:300px;
+}
+
+.peoplename {color:#ffffff; font-weight: bold; font-size:120%;}
+
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
 </head>
 
 <body>
+		<div class="navbar">
+			<div class="dropdown" style="float: right; margin-right:2em">
+			  <button class="dropbtn">About
+				<i class="fa fa-caret-down"></i>
+			  </button>
+			  <div class="dropdown-content">
+          <a href="#technology">Technology</a>
+          <a href="#team">Team</a>
+				<a href="#contact">Contact</a>
+			  </div>
+			</div>
+		  </div>	
+	
+	<div>
+		<img src="assets/img/ImagingX.png" alt="ImagingX" width=900px, style="text-align: center" title="ImagingX" class="center">
+  </div>
+  <hr>
 
-</body></html>
+  <div class="wrapper" style="margin-left:2em;" id="technology">
+    <h1>Technology</h1>
+    <p style="line-height: 1.5;">
+      We are engineers in heart.  We strive to turn ideas into products. <br />
+      We specialized in all things related to X-ray. Our current R&D focus: design and prototyping an ultraportable CT 
+      scanner based on field emission X-ray source array and deep learning image formation algorithm. The idea behind our work is nicely illustrated by
+      <a href="https://www.nanox.vision/" >Nanox</a>. </p>
+
+    <div class="center" style="width:640px;">
+      <iframe src="https://player.vimeo.com/video/393211389" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ 
+      <p class="center">Ultraportable medical CT imaging device is both necessary and feasible.</p>
+      </div>
+
+  </div>
+  <hr>
+
+  <div class="wrapper" style="margin-left:2em;" id="team">
+    <h1>Team</h1>
+
+    <table id="people">
+      <tr>
+        <td class="photo">
+          <img class="rounded-circle" src="assets/img/profile.jpg" alt="Cao" width="180" />
+        </td>
+
+        <td class="contact">
+          <span class="peoplename">Guohua Cao, PhD</span><br /><br />
+          <p>Founder and President<br /></p>
+
+          <a href="http://guohuacao.com/Dr.Cao.html">Web Portofolio</a> <br />
+
+        </td>		
+      </tr>
+    </table>
+
+  </div>
+  <hr>
+
+  <div class="wrapper" style="margin-left:2em;" id="contact">
+    <h1>Contact</h1>
+    <p>
+      Email: <a href="mailto:ImagingX.contact@gmail.com">imagingx.contact @ gmail. com</a> Phone: (540) 319-3918 
+    </p>
+  </div>
+  <hr>
+
+  <div class="footer">
+
+    <script type="text/javascript" language="Javascript">
+    
+    var lastmod=new Date(document.lastModified);
+    <!-- var curr_date = lastmod.getDate(); -->
+    <!-- var curr_month = lastmod.getMonth(); -->
+    var curr_year = lastmod.getFullYear();
+    
+    document.write("Copyright &copy; "+curr_year+" ImagingX Inc. All Rights Reserved.");
+    
+    </script>
+    </div><!--end bracket for "footer"-->
+
+</body>
+</html>
